@@ -26,6 +26,7 @@
   --shadow-card: 0 15px 60px -40px rgb(15 23 42 / 0.8);
   --radius-card: 1.5rem;
   --tracking-brand: 0.3em;
+  --carousel-duration: 18s;
 }
 
 html {
@@ -59,4 +60,23 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+
+@keyframes product-carousel {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.product-carousel-track {
+  animation: product-carousel var(--carousel-duration) linear infinite;
+  width: max-content;
+}
+
+.product-carousel-track:hover {
+  animation-play-state: paused;
 }
