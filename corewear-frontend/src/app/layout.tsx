@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Corewear",
   description: "Мінімалістичний сайт з простою сторінкою продуктів.",
+  verification: {
+    google: "LqACh4Ch5AmtWJx725HJ7u3rAPR8edLr-Vs8P8sEPoY"
+  }
 };
 
 export default function RootLayout({
